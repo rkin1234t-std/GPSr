@@ -1,0 +1,40 @@
+    # Конфигурация плагина GpsPL
+
+# Настройки навигации
+navigation:
+  # Радиус достижения точки (в блоках)
+  arrival-radius: 5
+
+# Сообщения плагина
+messages:
+  prefix: "&7[&bGpsПл&7] "
+  no-permission: "&cУ вас нет прав для использования этой команды!"
+  
+  # Создание точек
+  point-created: "&aТочка &e%name% &aуспешно создана!"
+  point-already-exists: "&cТочка с названием &e%name% &cуже существует!"
+  
+  # Удаление точек
+  point-deleted: "&aТочка &e%name% &aуспешно удалена!"
+  point-not-found: "&cТочка с названием &e%name% &cне найдена!"
+  
+  # Перезагрузка
+  plugin-reloaded: "&aПлагин успешно перезагружен!"
+  
+  # Навигация
+  navigation-started: "&aНавигация к точке &e%name% &aзапущена!"
+  navigation-started-coords: "&aНавигация к координатам &eX: %x%, Y: %y%, Z: %z% &aзапущена!"
+  navigation-stopped: "&aНавигация остановлена!"
+  navigation-no-active: "&cУ вас нет активной навигации!"
+  arrived-title: "&a✓"
+  arrived-subtitle: "&fВы достигли точки назначения!"
+  
+  # Список точек
+  list-header: "&e=== Список GPS точек ==="
+  list-item: "&7- &e%name% &7(&fx: %x%, y: %y%, z: %z%&7)"
+  list-footer: "&e========================="
+  list-empty: "&cСписок GPS точек пуст!"
+
+# Точки GPS (будут автоматически заполняться)
+points: {} 
+    
