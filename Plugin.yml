@@ -1,0 +1,39 @@
+    name: GpsPL
+version: '1.1'
+main: com.rkin1234t.gpspl.GpsPL
+api-version: 1.18
+authors: [rkin1234t | Developer]
+description: GpsPL plugin for Minecraft 1.18.2
+
+commands:
+  gpspl:
+    description: Основная команда GPS-навигации
+    usage: /gpspl <create|delete|reload|goto|stop|cancel|list> [название]
+    aliases: []
+  gps:
+    description: Сокращенная команда GPS-навигации
+    usage: /gps <create|delete|reload|goto|stop|cancel|list> [название]
+    aliases: []
+
+permissions:
+  gpspl.create:
+    description: Право на создание GPS точек
+    default: op
+  gpspl.delete:
+    description: Право на удаление GPS точек
+    default: op
+  gpspl.reload:
+    description: Право на перезагрузку плагина
+    default: op
+  gpspl.list:
+    description: Право на просмотр списка GPS точек
+    default: op
+  gpspl.admin:
+    description: Право на администрирование плагина
+    default: op
+    children:
+      gpspl.create: true
+      gpspl.delete: true
+      gpspl.reload: true
+      gpspl.list: true 
+    
